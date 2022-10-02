@@ -1,0 +1,91 @@
+.project {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.project__el {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 2 * 30px) / 3);
+  }
+
+  // width: 370px;
+  // height: 404px;
+}
+
+.project__link {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  transition: box-shadow $transition-code;
+  border-left: $project-border;
+  border-right: $project-border;
+  border-bottom: $project-border;
+
+  &:hover,
+  :focus {
+    box-shadow: $project-shadow;
+  }
+}
+
+.project__picture {
+  position: relative;
+  overflow: hidden;
+}
+.project__img {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: 294px;
+  }
+}
+.project__overflow {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  color: $white-text-color;
+  background: $overflow-background;
+  transition: transform $transition-code;
+  .project__link:hover &,
+  .project__link:focus & {
+    transform: translateY(0);
+  }
+  @media screen and (max-width: 767px) {
+    padding: 77px 24px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px 77px;
+  }
+}
+
+.project__title {
+  padding: 20px 24px;
+
+  background-color: $white-text-color;
+}
+.project__name {
+  margin-bottom: 4px;
+  @include special-font(700, 18px, 0.06em, 2, $base-color);
+}
+.project__subtitle {
+  font-size: 16px;
+  line-height: 1.875;
+  color: $base-color;
+}

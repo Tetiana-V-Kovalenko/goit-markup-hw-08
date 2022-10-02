@@ -1,0 +1,95 @@
+.team {
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  margin: 0;
+
+  text-align: center;
+  background-color: $employee-background-color;
+}
+.team__container {
+  @extend %container;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.team__title {
+  margin-bottom: 30px;
+  @include special-font(700, 28px, 0.03em, calc(33 / 28), $base-color);
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    @include special-font(700, 36px, 0.03em, calc(42 / 36), $base-color);
+  }
+}
+.team__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+.team__el {
+  // width: 270px;
+  box-shadow: $special-shadow;
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 3 * 30px) / 4);
+  }
+}
+.team__img {
+  width: 100%;
+  @media screen and (max-width: 767px) {
+  }
+}
+.person {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  background-color: $white-text-color;
+  @media screen and (max-width: 767px) {
+  }
+}
+.person__name {
+  margin-bottom: 10px;
+  @include special-font(500, 16px, 0.03em, calc(19 / 16), $base-color);
+}
+.person__job {
+  margin-bottom: 16px;
+  @include special-font(400, 16px, 0.03em, calc(19 / 16), $desrp-color);
+}
+.social-network {
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 767px) {
+  }
+}
+.social-network__el {
+  list-style: none;
+  height: 44px;
+  width: 44px;
+}
+.social-network__link {
+  @extend %flex-centered;
+  width: 100%;
+  height: 100%;
+
+  color: $icons-noactive-color;
+  border-radius: 50%;
+  transition: color $transition-code, background-color $transition-code;
+  &:hover,
+  :focus {
+    background-color: $active-color;
+    color: $white-text-color;
+  }
+}
+.social-network__icon {
+  height: 20px;
+  // align-items: center;
+  fill: currentColor;
+}
