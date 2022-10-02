@@ -430,6 +430,7 @@ header {
   .nav {
     width: calc(100% - 30px - 143px);
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 }

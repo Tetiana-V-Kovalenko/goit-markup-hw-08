@@ -98,7 +98,7 @@ header {
   @media screen and (min-width: 768px) {
     width: calc(100% - 30px - 143px);
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
   }
 }
