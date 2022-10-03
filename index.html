@@ -38,46 +38,48 @@
               </li>
             </ul>
           </nav>
-          <ul class="header-contact">
-            <li class="header-contact__item header-contact__item--mail">
-              <a
-                href="mailto:info@devstudio.com"
-                class="header-contact__link header-contact__link--mail"
-              >
-                <svg class="header-contact__icon" width="16">
-                  <use
-                    href="./images/icons.svg/symbol-defs.svg#icon-envelopeopti"
-                  /></svg
-                >info@devstudio.com
-              </a>
-            </li>
-            <li class="header-contact__item header-contact__item--tel">
-              <a
-                href="tel:+380961111111"
-                class="header-contact__link header-contact__link--tel"
-              >
-                <svg class="header-contact__icon" width="10">
-                  <use
-                    href="./images/icons.svg/symbol-defs.svg#icon-smartphoneopti"
-                  ></use></svg
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-          <ul class="header-network">
-            <li class="header-network__item">
-              <a href="http://" class="header-network__link">Instagram</a>
-            </li>
-            <li class="header-network__item">
-              <a href="http://" class="header-network__link">Twitter</a>
-            </li>
-            <li class="header-network__item">
-              <a href="http://" class="header-network__link">Facebook</a>
-            </li>
-            <li class="header-network__item">
-              <a href="http://" class="header-network__link">LinkedIn</a>
-            </li>
-          </ul>
+          <div>
+            <ul class="header-contact">
+              <li class="header-contact__item header-contact__item--mail">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="header-contact__link header-contact__link--mail"
+                >
+                  <svg class="header-contact__icon" width="16">
+                    <use
+                      href="./images/icons.svg/symbol-defs.svg#icon-envelopeopti"
+                    /></svg
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="header-contact__item header-contact__item--tel">
+                <a
+                  href="tel:+380961111111"
+                  class="header-contact__link header-contact__link--tel"
+                >
+                  <svg class="header-contact__icon" width="10">
+                    <use
+                      href="./images/icons.svg/symbol-defs.svg#icon-smartphoneopti"
+                    ></use></svg
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="header-network">
+              <li class="header-network__item">
+                <a href="http://" class="header-network__link">Instagram</a>
+              </li>
+              <li class="header-network__item">
+                <a href="http://" class="header-network__link">Twitter</a>
+              </li>
+              <li class="header-network__item">
+                <a href="http://" class="header-network__link">Facebook</a>
+              </li>
+              <li class="header-network__item">
+                <a href="http://" class="header-network__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <button type="button" class="nav__btn" data-menu-button>
           <svg
@@ -150,40 +152,72 @@
           <h2 class="doing__title">Чим ми займаємося</h2>
           <ul class="doing__list list">
             <li class="doing__el">
-              <img
-                srcset="
-                  ./images/doing/img-min.jpg 1x,
-                  ./images/doing/img1-2x.jpg 2x
-                "
-                src="./images/doing/img-min.jpg"
-                alt="Coding"
-                width="370"
-                class="doing__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/doing/webp/img-min.webp 1x,
+                    ./images/doing/webp/img1-2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/doing/img-min.jpg 1x,
+                    ./images/doing/img1-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/doing/img-min.jpg"
+                  alt="Coding"
+                  width="370"
+                  class="doing__img"
+                />
+              </picture>
+
               <p class="doing__subtitle">Десктопні Додатки</p>
             </li>
             <li class="doing__el">
-              <img
-                srcset="
-                  ./images/doing/img(1)-min.jpg 1x,
-                  ./images/doing/img2-2x.jpg    2x
-                "
-                src="./images/img(1)-min.jpg"
-                alt="Markup"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/doing/webp/img(1)-min.webp 1x,
+                    ./images/doing/webp/img2-2x.webp    2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/doing/img(1)-min.jpg 1x,
+                    ./images/doing/img2-2x.jpg    2x
+                  "
+                />
+                <img src="./images/img(1)-min.jpg" alt="Markup" width="370" />
+              </picture>
+
               <p class="doing__subtitle">Мобільні додатки</p>
             </li>
             <li class="doing__el">
-              <img
-                srcset="
-                  ./images/doing/img(2)-min.jpg 1x,
-                  ./images/doing/img3-2x.jpg    2x
-                "
-                src="./images/img(2)-min.jpg"
-                alt="Web designing"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/doing/webp/img(2)-min.webp 1x,
+                    ./images/doing/webp/img3-2x.webp    2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/doing/img(2)-min.jpg 1x,
+                    ./images/doing/img3-2x.jpg    2x
+                  "
+                />
+                <img
+                  src="./images/img(2)-min.jpg"
+                  alt="Web designing"
+                  width="370"
+                />
+              </picture>
+
               <p class="doing__subtitle">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -194,16 +228,28 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__el">
-              <img
-                srcset="
-                  ./images/team/team-min.jpg 1x,
-                  ./images/team/team-2x.jpg  2x
-                "
-                src="./images/team/team-min.jpg"
-                alt="Ihor Demyanenko"
-                width="270"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/webp/team-min.jpg 1x,
+                    ./images/team/webp/team-2x.jpg  2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-min.jpg 1x,
+                    ./images/team/team-2x.jpg  2x
+                  "
+                />
+                <img
+                  src="./images/team/team-min.jpg"
+                  alt="Ihor Demyanenko"
+                  width="270"
+                  class="team__img"
+                />
+              </picture>
+
               <div class="person">
                 <h3 class="person__name">Ігор Дем'яненко</h3>
                 <p class="person__job">Product Designer</p>
@@ -244,16 +290,28 @@
               </div>
             </li>
             <li class="team__el">
-              <img
-                srcset="
-                  ./images/team/team1-min.jpg 1x,
-                  ./images/team/team1-2x.jpg  2x
-                "
-                src="./images/team1-min.jpg"
-                alt="Olga Repina"
-                width="270"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/webp/team1-min.jpg 1x,
+                    ./images/team/webp/team1-2x.jpg  2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team1-min.jpg 1x,
+                    ./images/team/team1-2x.jpg  2x
+                  "
+                />
+                <img
+                  src="./images/team1-min.jpg"
+                  alt="Olga Repina"
+                  width="270"
+                  class="team__img"
+                />
+              </picture>
+
               <div class="person">
                 <h3 class="person__name">Ольга Рєпіна</h3>
                 <p class="person__job">Frontend Developer</p>
@@ -294,16 +352,28 @@
               </div>
             </li>
             <li class="team__el">
-              <img
-                srcset="
-                  ./images/team/team2-min.jpg 1x,
-                  ./images/team/team2-2x.jpg  2x
-                "
-                src="./images/team2-min.jpg"
-                alt="Mykola Tarasov"
-                width="270"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/webp/team2-min.jpg 1x,
+                    ./images/team/webp/team2-2x.jpg  2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team2-min.jpg 1x,
+                    ./images/team/team2-2x.jpg  2x
+                  "
+                />
+                <img
+                  src="./images/team2-min.jpg"
+                  alt="Mykola Tarasov"
+                  width="270"
+                  class="team__img"
+                />
+              </picture>
+
               <div class="person">
                 <h3 class="person__name">Микола Тарасов</h3>
                 <p class="person__job">Marketing</p>
@@ -344,16 +414,28 @@
               </div>
             </li>
             <li class="team__el">
-              <img
-                srcset="
-                  ./images/team/team3-min.jpg 1x,
-                  ./images/team/team3-2x.jpg  2x
-                "
-                src="./images/team3-min.jpg"
-                alt="Mykhailo Yermakov"
-                width="270"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/webp/team3-min.jpg 1x,
+                    ./images/team/webp/team3-2x.jpg  2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team3-min.jpg 1x,
+                    ./images/team/team3-2x.jpg  2x
+                  "
+                />
+                <img
+                  src="./images/team3-min.jpg"
+                  alt="Mykhailo Yermakov"
+                  width="270"
+                  class="team__img"
+                />
+              </picture>
+
               <div class="person">
                 <h3 class="person__name">Михайло Єрмаков</h3>
                 <p class="person__job">UI Designer</p>
@@ -613,6 +695,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

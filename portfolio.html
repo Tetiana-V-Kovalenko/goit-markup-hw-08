@@ -22,63 +22,65 @@
         <a href="./index.html" class="logo"
           >Web<span class="logo__end-part">Studio</span></a
         >
-
-        <nav class="nav" data-menu>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link">Студія</a>
-            </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link--active"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__link">Контакти</a>
-            </li>
-          </ul>
-
-          <ul class="header-contact">
-            <li class="header-contact__item header-contact__item--mail">
-              <a
-                href="mailto:info@devstudio.com"
-                class="header-contact__link header-contact__link--mail"
-              >
-                <svg class="header-contact__icon" width="16">
-                  <use
-                    href="./images/icons.svg/symbol-defs.svg#icon-envelopeopti"
-                  /></svg
-                >info@devstudio.com
-              </a>
-            </li>
-            <li class="header-contact__item header-contact__item--tel">
-              <a
-                href="tel:+380961111111"
-                class="header-contact__link header-contact__link--tel"
-              >
-                <svg class="header-contact__icon" width="10">
-                  <use
-                    href="./images/icons.svg/symbol-defs.svg#icon-smartphoneopti"
-                  ></use></svg
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-          <ul class="header-network">
-            <li class="header-network__item">
-              <a href="http://" class="header-network__link">Instagram</a>
-            </li>
-            <li class="header-network__item">
-              <a href="http://" class="header-network__link">Twitter</a>
-            </li>
-            <li class="header-network__item">
-              <a href="http://" class="header-network__link">Facebook</a>
-            </li>
-            <li class="header-network__item">
-              <a href="http://" class="header-network__link">LinkedIn</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="nav" data-menu>
+          <nav>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link">Студія</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link nav__link--active"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <ul class="header-contact">
+              <li class="header-contact__item header-contact__item--mail">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="header-contact__link header-contact__link--mail"
+                >
+                  <svg class="header-contact__icon" width="16">
+                    <use
+                      href="./images/icons.svg/symbol-defs.svg#icon-envelopeopti"
+                    /></svg
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="header-contact__item header-contact__item--tel">
+                <a
+                  href="tel:+380961111111"
+                  class="header-contact__link header-contact__link--tel"
+                >
+                  <svg class="header-contact__icon" width="10">
+                    <use
+                      href="./images/icons.svg/symbol-defs.svg#icon-smartphoneopti"
+                    ></use></svg
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="header-network">
+              <li class="header-network__item">
+                <a href="http://" class="header-network__link">Instagram</a>
+              </li>
+              <li class="header-network__item">
+                <a href="http://" class="header-network__link">Twitter</a>
+              </li>
+              <li class="header-network__item">
+                <a href="http://" class="header-network__link">Facebook</a>
+              </li>
+              <li class="header-network__item">
+                <a href="http://" class="header-network__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <button type="button" class="nav__btn" data-menu-button>
           <svg
             width="40"
@@ -126,16 +128,29 @@
             <li class="project__el">
               <a href="" class="project__link">
                 <div class="project__picture">
-                  <img
-                    srcset="
-                      ./images/portfolio/img1-min.jpg 1x,
-                      ./images/portfolio/img1-2x.jpg  2x
-                    "
-                    src="./images/portfolio/img1-min.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    class="project__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/webp/img1-min.jpg 1x,
+                        ./images/portfolio/webp/img1-2x.jpg  2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img1-min.jpg 1x,
+                        ./images/portfolio/img1-2x.jpg  2x
+                      "
+                    />
+
+                    <img
+                      src="./images/portfolio/img1-min.jpg"
+                      alt="Технокряк"
+                      width="370"
+                      class="project__img"
+                    />
+                  </picture>
+
                   <p class="project__overflow">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -152,16 +167,28 @@
             <li class="project__el">
               <a href="" class="project__link">
                 <div class="project__picture">
-                  <img
-                    srcset="
-                      ./images/portfolio/img2-min.jpg 1x,
-                      ./images/portfolio/img2-2x.jpg  2x
-                    "
-                    src="./images/portfolio/img2-min.jpg"
-                    alt="Постер"
-                    width="370"
-                    class="project__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/webp/img2-min.jpg 1x,
+                        ./images/portfolio/webp/img2-2x.jpg  2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img2-min.jpg 1x,
+                        ./images/portfolio/img2-2x.jpg  2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img2-min.jpg"
+                      alt="Постер"
+                      width="370"
+                      class="project__img"
+                    />
+                  </picture>
+
                   <p class="project__overflow">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -179,16 +206,28 @@
             <li class="project__el">
               <a href="" class="project__link">
                 <div class="project__picture">
-                  <img
-                    srcset="
-                      ./images/portfolio/img3-min.jpg 1x,
-                      ./images/portfolio/img3-2x.jpg  2x
-                    "
-                    src="./images/portfolio/img3-min.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    class="project__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/webp/img3-min.jpg 1x,
+                        ./images/portfolio/webp/img3-2x.jpg  2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img3-min.jpg 1x,
+                        ./images/portfolio/img3-2x.jpg  2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img3-min.jpg"
+                      alt="Ресторан Seafood"
+                      width="370"
+                      class="project__img"
+                    />
+                  </picture>
+
                   <p class="project__overflow">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -205,16 +244,28 @@
             <li class="project__el">
               <a href="" class="project__link">
                 <div class="project__picture">
-                  <img
-                    srcset="
-                      ./images/portfolio/img4-min.jpg 1x,
-                      ./images/portfolio/img4-2x.jpg  2x
-                    "
-                    src="./images/portfolio/img4-min.jpg"
-                    alt="Проєкт Prime"
-                    width="370"
-                    class="project__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/webp/img4-min.jpg 1x,
+                        ./images/portfolio/webp/img4-2x.jpg  2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img4-min.jpg 1x,
+                        ./images/portfolio/img4-2x.jpg  2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img4-min.jpg"
+                      alt="Проєкт Prime"
+                      width="370"
+                      class="project__img"
+                    />
+                  </picture>
+
                   <p class="project__overflow">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -231,16 +282,28 @@
             <li class="project__el">
               <a href="" class="project__link">
                 <div class="project__picture">
-                  <img
-                    srcset="
-                      ./images/portfolio/img5-min.jpg 1x,
-                      ./images/portfolio/img5-2x.jpg  2x
-                    "
-                    src="./images/portfolio/img5-min.jpg"
-                    alt="Проєкт Boxes"
-                    width="370"
-                    class="project__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/webp/img5-min.jpg 1x,
+                        ./images/portfolio/webp/img5-2x.jpg  2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img5-min.jpg 1x,
+                        ./images/portfolio/img5-2x.jpg  2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img5-min.jpg"
+                      alt="Проєкт Boxes"
+                      width="370"
+                      class="project__img"
+                    />
+                  </picture>
+
                   <p class="project__overflow">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -257,16 +320,28 @@
             <li class="project__el">
               <a href="" class="project__link">
                 <div class="project__picture">
-                  <img
-                    srcset="
-                      ./images/portfolio/img6-min.jpg 1x,
-                      ./images/portfolio/img6-2x.jpg  2x
-                    "
-                    src="./images/portfolio/img6-min.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    class="project__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/webp/img6-min.jpg 1x,
+                        ./images/portfolio/webp/img6-2x.jpg  2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img6-min.jpg 1x,
+                        ./images/portfolio/img6-2x.jpg  2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img6-min.jpg"
+                      alt="Inspiration has no Borders"
+                      width="370"
+                      class="project__img"
+                    />
+                  </picture>
+
                   <p class="project__overflow">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -283,16 +358,28 @@
             <li class="project__el">
               <a href="" class="project__link">
                 <div class="project__picture">
-                  <img
-                    srcset="
-                      ./images/portfolio/img7-min.jpg 1x,
-                      ./images/portfolio/img7-2x.jpg  2x
-                    "
-                    src="./images/portfolio/img7-min.jpg"
-                    alt="Видання Limited Edition"
-                    width="370"
-                    class="project__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/webp/img7-min.jpg 1x,
+                        ./images/portfolio/webp/img7-2x.jpg  2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img7-min.jpg 1x,
+                        ./images/portfolio/img7-2x.jpg  2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img7-min.jpg"
+                      alt="Видання Limited Edition"
+                      width="370"
+                      class="project__img"
+                    />
+                  </picture>
+
                   <p class="project__overflow">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -309,16 +396,29 @@
             <li class="project__el">
               <a href="" class="project__link">
                 <div class="project__picture">
-                  <img
-                    srcset="
-                      ./images/portfolio/img8-min.jpg 1x,
-                      ./images/portfolio/img8-2x.jpg  2x
-                    "
-                    src="./images/portfolio/img8-min.jpg"
-                    alt="Проєкт LAB"
-                    width="370"
-                    class="project__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/webp/img8-min.jpg 1x,
+                        ./images/portfolio/webp/img8-2x.jpg  2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img8-min.jpg 1x,
+                        ./images/portfolio/img8-2x.jpg  2x
+                      "
+                    />
+
+                    <img
+                      src="./images/portfolio/img8-min.jpg"
+                      alt="Проєкт LAB"
+                      width="370"
+                      class="project__img"
+                    />
+                  </picture>
+
                   <p class="project__overflow">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -335,16 +435,28 @@
             <li class="project__el">
               <a href="" class="project__link">
                 <div class="project__picture">
-                  <img
-                    srcset="
-                      ./images/portfolio/img9-min.jpg 1x,
-                      ./images/portfolio/img9-2x.jpg  2x
-                    "
-                    src="./images/portfolio/img9-min.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    class="project__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/webp/img9-min.jpg 1x,
+                        ./images/portfolio/webp/img9-2x.jpg  2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img9-min.jpg 1x,
+                        ./images/portfolio/img9-2x.jpg  2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img9-min.jpg"
+                      alt="Growing Business"
+                      width="370"
+                      class="project__img"
+                    />
+                  </picture>
+
                   <p class="project__overflow">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -448,6 +560,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

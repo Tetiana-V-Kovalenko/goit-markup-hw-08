@@ -6,9 +6,16 @@
 }
 .portfolio__container {
   @extend %container;
-  @media screen and (max-width: 1199px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding: 60px 15px;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    padding: 0 15px;
   }
 }
 .portfolio__title {
@@ -26,6 +33,9 @@
     justify-content: center;
     margin-bottom: 30px;
     gap: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
   // margin-bottom: 50px;
   // @extend %flex-centered;

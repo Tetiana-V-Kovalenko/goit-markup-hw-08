@@ -1,0 +1,168 @@
+.nav {
+  @media (max-width: 767px) {
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    // outline: 1px solid red;
+
+    display: none;
+
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 3;
+
+      background-color: $white-text-color;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: calc(100% - 30px - 143px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.nav__list {
+  @include special-font(500, 40px, 0.02em, calc(47 / 40), $base-color);
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    @include special-font(500, 14px, 0.02em, 1.14, $base-color);
+  }
+}
+.nav__item {
+  @media (max-width: 767px) {
+    padding-bottom: 32px;
+    &:last-child {
+      padding-bottom: 0px;
+    }
+  }
+}
+.nav__link {
+  display: block;
+
+  padding-bottom: 0;
+  color: $base-color;
+  transition: color $transition-code;
+  &--active {
+    position: relative;
+    color: $active-color;
+  }
+
+  &:hover,
+  :focus {
+    color: $active-color;
+  }
+  @media screen and (min-width: 768px) {
+    // height: 100%;
+    padding: 32px 0;
+    &--active::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      left: 0;
+      bottom: 0;
+      background: $active-color;
+      border-radius: 2px;
+    }
+  }
+}
+.header-contact {
+  @media (max-width: 767px) {
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+  }
+}
+.header-contact__item {
+  @media (max-width: 767px) {
+    &--tel {
+      margin-bottom: 32px;
+      order: 1;
+    }
+    &--mail {
+      order: 2;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    text-align: center;
+  }
+}
+.header-contact__link {
+  text-decoration: none;
+  @media (max-width: 767px) {
+    &--tel {
+      @include special-font(500, 34px, 0.02em, calc(40 / 34), $active-color);
+    }
+    &--mail {
+      @include special-font(500, 24px, 0.02em, calc(28 / 24), $desrp-color);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    @include special-font(500, 14px, 0.02em, 1.14, $desrp-color);
+    &:hover,
+    :focus {
+      color: $active-color;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+.header-contact__icon {
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+// як їх розмітити щоб на меншому екрані не потрібно біло рухати меню
+
+.header-network {
+  display: flex;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.header-network__item {
+  max-width: 100%;
+  padding-right: 10px;
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+  border-right: $form-input-border;
+  &:last-child {
+    border-right: none;
+  }
+}
+.header-network__link {
+  @include special-font(500, 18px, 0.02em, calc(22 / 18), $active-color);
+  @media screen and (min-width: 320px) {
+    font-size: small;
+  }
+}
