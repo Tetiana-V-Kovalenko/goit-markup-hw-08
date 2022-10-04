@@ -30,7 +30,7 @@
   border-bottom: $project-border;
 
   &:hover,
-  :focus {
+  &:focus {
     box-shadow: $project-shadow;
   }
 }

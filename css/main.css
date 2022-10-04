@@ -362,17 +362,10 @@ select {
 header {
   border-bottom: 1px solid #ececec;
 }
-@media screen and (min-width: 480px) {
-  header {
-    position: relative;
-  }
-}
-
 .header {
   width: 100%;
   display: flex;
   align-items: center;
-  position: relative;
 }
 @media screen and (min-width: 480px) {
   .header {
@@ -416,8 +409,7 @@ header {
   background-color: #ffffff;
   border: none;
 }
-.nav__btn:hover,
-.nav__btn :focus {
+.nav__btn:hover, .nav__btn:focus {
   color: #2196f3;
 }
 .nav.is-open + .nav__btn {
@@ -517,8 +509,7 @@ header {
   position: relative;
   color: #2196f3;
 }
-.nav__link:hover,
-.nav__link :focus {
+.nav__link:hover, .nav__link:focus {
   color: #2196f3;
 }
 @media screen and (min-width: 768px) {
@@ -576,6 +567,9 @@ header {
 .header-contact__link {
   text-decoration: none;
 }
+.header-contact__link:hover, .header-contact__link:focus {
+  color: #2196f3;
+}
 @media (max-width: 767px) {
   .header-contact__link--tel {
     font-family: "Roboto", sans-serif;
@@ -605,10 +599,6 @@ header {
     line-height: 1.14;
     font-style: normal;
     color: #757575;
-  }
-  .header-contact__link:hover,
-.header-contact__link :focus {
-    color: #2196f3;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -797,8 +787,7 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
 }
-.modal__btn:hover,
-.modal__btn :focus {
+.modal__btn:hover, .modal__btn:focus {
   cursor: pointer;
   color: #2196f3;
 }
@@ -859,8 +848,7 @@ header {
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__input:hover,
-.form__input :focus {
+.form__input:hover, .form__input:focus {
   border-color: #2196f3;
 }
 .form__input--textarea {
@@ -975,8 +963,7 @@ header {
   min-width: 200px;
   height: 50px;
 }
-.form__btn:hover,
-.form__btn :focus {
+.form__btn:hover, .form__btn:focus {
   background-color: #188ce8;
 }
 
@@ -1089,6 +1076,10 @@ header {
   .doing {
     display: none;
   }
+}
+
+.doing__container {
+  max-width: 1200px;
 }
 
 .doing__title {
@@ -1261,8 +1252,7 @@ header {
   border-radius: 50%;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-network__link:hover,
-.social-network__link :focus {
+.social-network__link:hover, .social-network__link:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
@@ -1362,8 +1352,7 @@ header {
   color: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.company__link:hover,
-.company__link :focus {
+.company__link:hover, .company__link:focus {
   color: #2196f3;
   border-color: #2196f3;
 }
@@ -1410,6 +1399,7 @@ header {
 .footer__logo {
   margin-top: 0;
   margin-bottom: 20px;
+  padding: 0;
 }
 @media screen and (min-width: 768px) {
   .footer__logo {
@@ -1494,8 +1484,7 @@ header {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-networks__link:hover,
-.footer-networks__link :focus {
+.footer-networks__link:hover, .footer-networks__link:focus {
   background-color: #2196f3;
 }
 
@@ -1575,8 +1564,7 @@ header {
   height: 50px;
   min-width: 200px;
 }
-.subscribe-form__btn:hover,
-.subscribe-form__btn :focus {
+.subscribe-form__btn:hover, .subscribe-form__btn:focus {
   background-color: #188ce8;
 }
 .subscribe-form__btn::after {

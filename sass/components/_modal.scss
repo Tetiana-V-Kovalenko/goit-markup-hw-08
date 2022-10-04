@@ -46,7 +46,7 @@
   transition: color $transition-code;
   background-color: $white-text-color;
   &:hover,
-  :focus {
+  &:focus {
     cursor: pointer;
     color: $active-color;
   }

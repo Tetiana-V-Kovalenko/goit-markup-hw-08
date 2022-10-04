@@ -59,7 +59,7 @@
   color: $icons-noactive-color;
   transition: color $transition-code, border-color $transition-code;
   &:hover,
-  :focus {
+  &:focus {
     color: $active-color;
     border-color: $active-color;
   }

@@ -89,7 +89,7 @@
   border-radius: 50%;
   transition: color $transition-code, background-color $transition-code;
   &:hover,
-  :focus {
+  &:focus {
     background-color: $active-color;
     color: $white-text-color;
   }

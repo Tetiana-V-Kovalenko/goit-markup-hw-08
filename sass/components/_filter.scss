@@ -67,7 +67,7 @@
   @media screen and (max-width: 767px) {
   }
   &:hover,
-  :focus {
+  &:focus {
     background-color: $active-color;
     color: $white-text-color;
     box-shadow: $special-shadow;
