@@ -6,6 +6,7 @@
   background-color: $special-backsround-color;
   background-image: linear-gradient($gradient-color, $gradient-color),
     url(../images/bg/header.jpg);
+  @extend %background-image;
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -14,10 +15,10 @@
       url(../images/bg/header2x.jpg);
   }
 
-  @extend %background-image;
   @media screen and (max-width: 767px) {
     padding: 118px 60px;
   }
+
   @media screen and (min-width: 768px) {
     padding: 118px 204px;
     background-image: linear-gradient($gradient-color, $gradient-color),
@@ -30,6 +31,7 @@
         url(../images/bg/header-tab2x.jpg);
     }
   }
+
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;

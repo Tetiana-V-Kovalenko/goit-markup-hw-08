@@ -494,9 +494,6 @@ header {
   .nav__item {
     padding-bottom: 32px;
   }
-  .nav__item:last-child {
-    padding-bottom: 0px;
-  }
 }
 
 .nav__link {

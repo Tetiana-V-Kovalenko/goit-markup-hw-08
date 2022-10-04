@@ -41,9 +41,9 @@
 .nav__item {
   @media (max-width: 767px) {
     padding-bottom: 32px;
-    &:last-child {
-      padding-bottom: 0px;
-    }
+    // &:last-child {
+    //   padding-bottom: 0px;
+    // }
   }
 }
 .nav__link {
